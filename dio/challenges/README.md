@@ -8,12 +8,6 @@ Repositório de desafios da plataforma DIO feitos.
 
 # Artigos
 
-## Machine Leaning
-
-[O que são redes neurais artificiais?](https://sabrinabm94.medium.com/ffc9f3ed1421)
-
-[Tipos de redes neurais artificiais](https://sabrinabm94.medium.com/79c7296e0b5d)
-
 ## Contatos
 
 - Mais sobre mim
