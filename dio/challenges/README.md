@@ -8,6 +8,13 @@ Criar index simples de site usando as principais tags htmls.
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/website/index.html)
 
+## Desafio 2- Criação de página com html semântico
+
+Criação de página inspirada no wikipedia mas com html semântico para softwares de acessiibilidade.
+
+[Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/website/page.html)
+
+
 # Artigos
 
 [A ascensão do JavaScript e seu Impacto no desenvolvimento web moderno
