@@ -2,20 +2,27 @@
 
 Repositório de desafios da plataforma DIO feitos.
 
-## Desafios 1 - Criação de index de site 
+## Desafios 1 - Criação de index de site
 
 Criar index simples de site usando as principais tags htmls.
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/website/index.html)
 
-## Desafio 2- Criação de página com html semântico
+## Desafio 2 - Criação de página com html semântico
 
 Criação de página inspirada no wikipedia mas com html semântico para softwares de acessiibilidade.
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/website/page.html)
 
+## Desafio 3 - Criação de landing page estática
+
+Criação de uma landing page baseada em layout estruturado no Figma.
+
+[Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/landing-page/index.html)
 
 # Artigos
+
+Publicações feitas de assuntos estudados nas formações de front-end.
 
 [A ascensão do JavaScript e seu Impacto no desenvolvimento web moderno
 ](https://sabrinabm94.medium.com/a-ascens%C3%A3o-do-javascript-e-seu-impacto-no-desenvolvimento-web-moderno-d9c439582329)
