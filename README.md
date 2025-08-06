@@ -40,7 +40,7 @@ You can access the project in your browser: localhost/javascript
 
 - More about me
 
-[![About me](https://github.com/sabrinabm94/about/blob/main/ABOUT.md)
+[About me](https://github.com/sabrinabm94/about/blob/main/ABOUT.md)
 
 - See my portfolio!
 
