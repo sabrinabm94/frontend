@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Watch and explore engaging videos with our modern and accessible video platform."
+    />
+    <meta name="author" content="VideoStream" />
+    <title>Watch Video | VideoStream</title>
+    <link rel="canonical" href="https://www.videostream.com/watch/video-id" />
+
+    <!-- Styles (inline for simplicity) -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f9f9f9;
+        color: #111;
+        line-height: 1.6;
+      }
+
+      header,
+      main,
+      aside,
+      footer {
+        padding: 1rem;
+      }
+
+      header {
+        background-color: #202020;
+        color: #fff;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      main {
+        flex: 2 1 700px;
+      }
+
+      aside {
+        flex: 1 1 300px;
+        background-color: #fff;
+      }
+
+      .video-player {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background-color: #000;
+        margin-bottom: 1rem;
+      }
+
+      .video-title {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 0.5rem 0;
+      }
+
+      .channel-info {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .channel-info img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+
+      .channel-info span {
+        font-weight: 600;
+      }
+
+      .video-description {
+        margin-bottom: 2rem;
+      }
+
+      .comment-section {
+        margin-top: 2rem;
+      }
+
+      .comment {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .comment strong {
+        display: block;
+        margin-bottom: 0.2rem;
+      }
+
+      .related-videos {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .related-video {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .related-video img {
+        width: 180px;
+        height: 100px;
+        object-fit: cover;
+      }
+
+      .related-video-title {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #000;
+      }
+
+      footer {
+        background-color: #202020;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header role="banner">
+      <h1>VideoStream</h1>
+    </header>
+
+    <div class="container">
+      <main role="main" id="video-content">
+        <section class="video-player" role="region" aria-label="Video Player">
+          <video controls width="100%" aria-label="Video player">
+            <source src="video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </section>
+
+        <h2 class="video-title">
+          Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo
+          Invertido com HTML e CSS
+        </h2>
+
+        <div class="channel-info">
+          <img src="images/channel-avatar.jpg" alt="Channel avatar of DIO" />
+          <span>DIO</span>
+        </div>
+
+        <section class="video-description" aria-label="Video Description">
+          <p>
+            Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS.
+            Para isso, criaremos uma landing page com a temática da série
+            Stranger Things, a qual contará com a implementação de um theme
+            switcher (light e dark) para explorarmos os mistérios do mundo
+            invertido.
+          </p>
+        </section>
+
+        <section class="comment-section" aria-label="Comments">
+          <h3>Comentários</h3>
+          <article class="comment">
+            <strong>Alice M.</strong>
+            <p>Ótimo vídeo!</p>
+          </article>
+          <article class="comment">
+            <strong>João F.</strong>
+            <p>Gostei, vou ver outros vídeos do canal.</p>
+          </article>
+        </section>
+      </main>
+
+      <aside role="complementary" aria-label="Related Videos">
+        <h3>Vídeos relacionados</h3>
+        <ul class="related-videos">
+          <li class="related-video">
+            <img
+              src="images/thumb1.png"
+              alt="Thumbnail for Geração Tech Unimed - BH - Ciência de Dados"
+            />
+            <div>
+              <p class="related-video-title">
+                Geração Tech Unimed - BH - Ciência de Dados
+              </p>
+              <p>Digital Innovation One</p>
+            </div>
+          </li>
+          <li class="related-video">
+            <img
+              src="images/thumb2.png"
+              alt="Thumbnail for Machine Learning Avançado - Fast Track"
+            />
+            <div>
+              <p class="related-video-title">
+                Machine Learning Avançado - Fast Track
+              </p>
+              <p>Digital Innovation One</p>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer role="contentinfo">
+      <p>
+        &copy; 2025 VideoStream. Todos os direitos reservados. Criado por
+        sabrinabm94
+      </p>
+    </footer>
+  </body>
+</html>
