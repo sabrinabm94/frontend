@@ -1,0 +1,143 @@
+/* Reset básico e box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia e variáveis */
+:root {
+  --purple: #5865f2;
+  --dark: #23272a;
+  --light-gray: #f6f6f6;
+  --white: #ffffff;
+  --gap: 1.5rem;
+  --container-width: 1200px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+/* Container centralizado */
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: var(--gap);
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+.nav-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+.login-btn {
+  background-color: var(--white);
+  color: var(--purple);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.nitro-hero {
+  background-color: var(--light-gray);
+  padding: 4rem 0;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+.hero-text {
+  flex: 1 1 400px;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.primary-btn {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero-img {
+  flex: 1 1 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Features Section */
+.features {
+  padding: 3rem 0;
+}
+.section-title {
+  font-size: 2rem;
+  margin-bottom: var(--gap);
+  text-align: center;
+}
+.feature-list {
+  display: flex;
+  gap: var(--gap);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feature-item {
+  flex: 1 1 200px;
+  text-align: center;
+}
+.feature-img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: var(--gap);
+  text-align: center;
+}
+.footer-logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

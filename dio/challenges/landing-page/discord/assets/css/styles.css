@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: #23272a;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.header {
+  background-color: #404eed;
+  color: white;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-btn {
+  background-color: white;
+  color: #404eed;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  background-color: #404eed;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 40px;
+  font-weight: 700;
+}
+
+.btn.primary {
+  background-color: white;
+  color: #404eed;
+}
+
+.btn.secondary {
+  background-color: #23272a;
+  color: white;
+}
+
+.feature {
+  padding: 4rem 0;
+}
+
+.feature .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.feature img {
+  height: 350px;
+  margin: 0 auto;
+}
+
+.feature .text {
+  max-width: 500px;
+}
+
+.feature h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  font-size: 1.1rem;
+}
+
+.feature-2 .container,
+.feature-4 .container {
+  flex-direction: row-reverse;
+}
+
+.footer {
+  background-color: #23272a;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}

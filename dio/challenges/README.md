@@ -26,6 +26,12 @@ Criação de uma página baseada em layout estruturado no Figma similar ao Youtu
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/website/youtube-video.html)
 
+## Desafio 5 - Criação de landing page similar ao Discord
+
+Criação de uma landing page baseada em layout estruturado no Figma similar ao Discord.
+
+[Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/landing-page/discord/index.html)
+
 # Artigos
 
 Publicações feitas de assuntos estudados nas formações de front-end.
