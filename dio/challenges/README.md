@@ -32,6 +32,12 @@ Criação de uma landing page baseada em layout estruturado no Figma similar ao 
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/landing-page/discord/index.html)
 
+## Desafio 6 - Classificador de nível de herois
+
+Identifica a pontuação de experiência de herois e define um nível para eles.
+
+[Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/javascript/hero-classification.js)
+
 # Artigos
 
 Publicações feitas de assuntos estudados nas formações de front-end.
