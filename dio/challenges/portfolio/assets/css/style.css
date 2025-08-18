@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap");
 
+/* =========================
+   Variáveis de Tema
+========================= */
+
 /* Tema Dark */
 :root[data-theme="dark"] {
   --bg-color: #121212;
@@ -29,22 +33,24 @@
   --icon-color: #56575a;
 }
 
-/* Aplicando variáveis */
+/* =========================
+   Reset e Base
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  list-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-bg-color) transparent;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0.5rem 1rem;
-  z-index: 2;
 }
 
 a {
@@ -56,10 +62,35 @@ b {
   font-weight: 400;
 }
 
+p,
+span,
+li {
+  font-size: 1rem;
+}
+
+p {
+  text-align: justify;
+}
+
+img {
+  height: 12.5rem; /* 200px */
+  margin: 0 auto;
+  display: block;
+}
+
+/* =========================
+   Tipografia
+========================= */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "League Spartan", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h1,
 h2,
 h3 {
-  font-family: "League Spartan", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   color: var(--text-color);
   font-weight: 200;
@@ -78,29 +109,37 @@ h3 {
   text-align: left;
 }
 h4 {
-  color: var(--btn-bg);
-  font-weight: 400;
   font-size: 1.15rem;
   text-align: left;
+  font-weight: 400;
+  color: var(--btn-bg);
 }
 
-p,
-span,
-li {
-  font-size: 1rem;
+/* =========================
+   Header & Navegação
+========================= */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  z-index: 2;
 }
-p {
-  text-align: justify;
-}
+
 .header__brand .brand__logo {
   width: 3.25rem;
   height: 3.25rem;
 }
-#toggleTheme {
-  color: var(--btn-bg);
-  cursor: pointer;
-  transition: ease-in-out 0.4s;
+
+.header__nav {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
 .menu {
   display: flex;
   align-items: center;
@@ -110,24 +149,21 @@ p {
 .menu__item {
   width: 100%;
 }
+
 .menu__link {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.menu--mobile {
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  justify-content: space-between;
-  border-top: 1px solid var(--primary-border-color);
+.menu__icon {
+  font-size: 1.5rem;
+  color: var(--text-color);
 }
-
-.menu--mobile .menu__link {
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5rem 1rem;
+.menu__text {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-color);
 }
 
 .menu__link.active .menu__icon,
@@ -137,24 +173,48 @@ p {
   color: var(--btn-bg);
 }
 
-.menu__icon,
-.menu__text {
-  color: var(--text-color);
-}
-.menu__icon {
-  font-size: 1.5rem;
-}
-.menu__text {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-}
-.menu--principal {
-  gap: 1rem;
-}
+.menu--principal,
 .menu--social {
   gap: 1rem;
 }
 
+.menu--mobile {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  border-top: 0.0625rem solid var(--primary-border-color); /* 1px */
+}
+
+.menu--mobile .menu__link {
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+.header__toggle {
+  margin-left: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header__toggle span {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3125rem; /* 5px */
+}
+
+#toggleTheme {
+  color: var(--btn-bg);
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+}
+
+/* =========================
+   Botões
+========================= */
 .btn {
   display: flex;
   justify-content: center;
@@ -180,13 +240,16 @@ p {
   text-transform: uppercase;
 }
 
+.btn--primary {
+  border: 0.0625rem solid var(--btn-bg);
+}
 .btn--primary span {
   color: var(--btn-text);
 }
-.btn--primary {
-  border: 1px solid var(--btn-bg);
-}
 
+/* =========================
+   Main, Sections & Layout
+========================= */
 main,
 .projects,
 .about,
@@ -240,7 +303,7 @@ main {
   width: 4.8rem;
   height: 4.8rem;
   aspect-ratio: 1/1;
-  border: 1px solid var(--secondary-border-color);
+  border: 0.0625rem solid var(--secondary-border-color);
   border-radius: 50rem;
 }
 
@@ -248,6 +311,9 @@ main {
   height: 2.4rem;
 }
 
+/* =========================
+   Projects Cards
+========================= */
 .projects {
   display: flex;
   flex-direction: column;
@@ -270,6 +336,7 @@ main {
   object-fit: cover;
   object-position: center;
 }
+
 .card__body {
   display: flex;
   flex-direction: column;
@@ -277,15 +344,9 @@ main {
   align-items: flex-start;
   gap: 1rem;
 }
+
 .card__description {
   color: var(--text-color);
-}
-
-.header__nav {
-  flex-basis: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
 }
 
 .card__list,
@@ -303,6 +364,7 @@ main {
   flex-flow: row wrap;
   justify-content: center;
 }
+
 .card__buttons .btn {
   padding: 0.65rem 1.25rem;
 }
@@ -326,11 +388,15 @@ main {
   margin: auto;
 }
 
+/* =========================
+   About
+========================= */
 .about {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+
 .about__content1,
 .about__content2 {
   display: flex;
@@ -346,7 +412,7 @@ main {
   object-position: center;
   pointer-events: none;
   border-radius: 50rem;
-  border: 1px solid var(--primary-border-color);
+  border: 0.0625rem solid var(--primary-border-color);
 }
 
 .about__description {
@@ -355,16 +421,18 @@ main {
   justify-content: flex-start;
   gap: 1.5rem;
 }
+
 .about__icons {
   display: flex;
   align-items: center;
   gap: 0.85rem;
 }
+
 .about__icons i {
   font-size: 1.25rem;
 }
 
-/* Colunas responsivas na About */
+/* Colunas responsivas */
 .about__content2 {
   display: flex;
   flex-wrap: wrap;
@@ -374,14 +442,6 @@ main {
 .about__content2 > .col2 {
   flex: 1 1 100%;
 }
-
-@media (min-width: 768px) {
-  .about__content2 > .col1,
-  .about__content2 > .col2 {
-    flex: 1 1 50%;
-  }
-}
-
 .about__content2 .col1 .row1,
 .about__content2 .col1 .row2 {
   display: flex;
@@ -389,18 +449,21 @@ main {
   gap: 0.5rem;
 }
 
-/* Accordion */
+/* =========================
+   Accordion
+========================= */
 .accordion__header {
   width: 100%;
   display: flex;
   padding: 0.75rem 1rem;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid var(--primary-border-color);
+  border: 0.0625rem solid var(--primary-border-color);
   background: transparent;
   cursor: pointer;
   transition: ease-in-out 0.3s;
 }
+
 .accordion__header span {
   color: var(--text-color);
 }
@@ -414,14 +477,15 @@ main {
 .accordion__item.active .accordion__header.end {
   border-radius: 0;
 }
+
 .accordion__body {
   display: none;
   padding: 1.25rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.625rem;
-  border: 1px solid var(--primary-border-color);
 }
+
 .accordion__item.active .accordion__header {
   background: var(--secondary-bg-color);
 }
@@ -432,16 +496,19 @@ main {
   transform: rotate(180deg);
 }
 
-/* Contact */
+/* =========================
+   Contact
+========================= */
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  border-top: 1px solid var(--primary-border-color);
-  border-bottom: 1px solid var(--primary-border-color);
+  border-top: 0.0625rem solid var(--primary-border-color);
+  border-bottom: 0.0625rem solid var(--primary-border-color);
 }
+
 .contact p,
 .contact__buttons a {
   text-align: center;
@@ -453,7 +520,7 @@ main {
   text-transform: lowercase;
 }
 
-/* Botões de contato lado a lado */
+/* Botões lado a lado */
 .contact__buttons {
   display: flex;
   flex-wrap: wrap;
@@ -463,71 +530,70 @@ main {
 
 .contact__buttons .btn {
   flex: 1 1 auto;
-  max-width: 200px;
+  max-width: 12.5rem; /* 200px */
 }
 
+/* =========================
+   Footer
+========================= */
 footer {
   margin-bottom: 5rem;
 }
+
 footer p {
   font-size: 0.875rem;
   text-align: center;
   padding: 1rem;
 }
 
-/* WhatsApp flutuante */
+/* =========================
+   WhatsApp Flutuante
+========================= */
 .whatsapp-float {
   position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  right: 20px;
+  width: 3.75rem; /* 60px */
+  height: 3.75rem;
+  bottom: 1.25rem;
+  right: 1.25rem;
   background-color: #25d366;
   color: #fff;
   border-radius: 50%;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875rem;
   z-index: 100;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.3);
 }
+
 .whatsapp-float:hover {
   background-color: #1ebe57;
   transition: 0.3s;
 }
 
-img {
-  height: 200px;
-  margin: 0 auto;
-  display: block;
-}
-
+/* =========================
+   Colunas, Serviços e Imagens
+========================= */
 .col1,
 .col2 {
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .services h2,
 .services h3,
 .services p {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0.625rem 0;
 }
 
-.header__toggle span {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 5px;
-}
-
-/* Responsividade */
+/* =========================
+   Responsividade
+========================= */
 @media (min-width: 768px) {
   .header {
     position: fixed;
-    border-bottom: 1px solid var(--primary-border-color);
+    border-bottom: 0.0625rem solid var(--primary-border-color);
     padding: 1rem 6rem;
     background: var(--bg-color);
   }
@@ -537,12 +603,14 @@ img {
   .nav--mobile {
     display: none;
   }
+
   h1 {
     font-size: 3rem;
   }
   h2 {
     font-size: 1.5rem;
   }
+
   main,
   .projects,
   .about {
@@ -555,17 +623,16 @@ img {
     width: 80%;
   }
   .main__content1 {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
   }
   .technologies {
-    padding: 6.25rem 6rem 2rem 6rem;
+    padding: 6.25rem 6rem 2rem;
     margin-top: -6rem;
   }
   footer {
     margin: 0;
   }
+
   .header__toggle {
     margin: auto;
   }
@@ -582,6 +649,7 @@ img {
   .card__cover {
     width: 55%;
   }
+
   .about {
     gap: 5rem;
   }
@@ -589,8 +657,6 @@ img {
   .about__content2 {
     display: grid;
     grid-template-columns: 34% 60%;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 4rem;
   }
   .about__description h2 {
@@ -608,17 +674,20 @@ img {
   h3 {
     font-size: 2rem;
   }
+
   main {
     padding: 6rem 4rem 2rem;
   }
   .main__content1 .btn {
     width: auto;
   }
+
   .technologies {
     flex-direction: row;
     justify-content: space-between;
     padding: 10rem 6rem 4rem;
   }
+
   .technologies h2 {
     font-size: 3rem;
     width: 55%;
@@ -633,11 +702,13 @@ img {
   .technologies__logo {
     height: 3rem;
   }
+
   p,
   span,
   li {
     font-size: 1.15rem;
   }
+
   .card__buttons .btn,
   .description__buttons .btn {
     width: auto;
@@ -654,6 +725,7 @@ img {
   h3 {
     font-size: 3.25rem;
   }
+
   .header {
     padding: 1rem 15rem;
   }
