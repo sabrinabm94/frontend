@@ -44,6 +44,12 @@ Desenvolvimento de um portfólio para apresentação profissional com tecnologia
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/portfolio/index.html)
 
+## Desafio 8 - Pokedex
+
+Desenvolvimento de uma página de acesso a dados de pokemons consumindo os dados de api pública PokeAPI, seguindo os detalhes do [desafio](https://github.com/digitalinnovationone/js-developer-pokedex/blob/main/README.md);
+
+[Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/pokedex/public/index.html)
+
 # Artigos
 
 Publicações feitas de assuntos estudados nas formações de front-end.

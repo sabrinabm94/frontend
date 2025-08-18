@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Pokédex Clássica (Gen 1) — Busque Pokémon por nome, ID, tipos e stats
+    </title>
+    <meta
+      name="description"
+      content="Pokédex clássica da primeira geração (Gen 1). Pesquise Pokémon pelo nome ou número, veja tipos, habilidades, base stats, altura, peso e sprites oficiais."
+    />
+    <link rel="canonical" href="https://example.com/pokedex" />
+    <meta property="og:title" content="Pokédex Clássica (Gen 1)" />
+    <meta
+      property="og:description"
+      content="Pesquise Pokémon por nome ou ID. Tipos, stats, sprites e dados oficiais."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#d32f2f" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- JSON-LD: WebSite + SearchAction para destacar a busca no Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Pokédex Clássica",
+        "url": "https://example.com/pokedex",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://example.com/pokedex?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Pular para o conteúdo</a>
+
+    <header class="site-header" role="banner">
+      <div class="container">
+        <div class="brand">
+          <a class="brand__link" href="/" aria-label="Página inicial Pokédex">
+            <span class="brand__logo" aria-hidden="true">🧭</span>
+            <span class="brand__name">Classic Pokédex</span>
+          </a>
+        </div>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#content">Pokédex</a></li>
+            <li><a class="nav-link" href="#about">Sobre</a></li>
+            <li><a class="nav-link" href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          id="toggleTheme"
+          aria-label="Alternar tema"
+        >
+          <i class="bi bi-moon" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="content" class="site-main" role="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <h1 id="hero-title">Pokédex Clássica — Primeira Geração (Gen 1)</h1>
+          <p class="hero__subtitle">
+            Encontre <strong>Pokémon</strong> por <strong>nome</strong> ou
+            <strong>#ID</strong>. Veja <strong>tipos</strong>,
+            <strong>base stats</strong>, altura, peso e sprites oficiais. Ideal
+            para fãs de <strong>Pokémon Red/Blue/Yellow</strong>.
+          </p>
+
+          <form
+            class="search-form"
+            role="search"
+            aria-label="Buscar Pokémon"
+            id="searchForm"
+          >
+            <label class="form-label" for="searchInput"
+              >Buscar Pokémon (nome ou #ID)</label
+            >
+            <div class="search-form__controls">
+              <input
+                class="input"
+                id="searchInput"
+                name="q"
+                type="search"
+                inputmode="search"
+                autocomplete="off"
+                placeholder="ex.: pikachu ou 25"
+                aria-describedby="searchHelp"
+                required
+              />
+              <button class="btn btn--primary" type="submit" id="searchBtn">
+                <i class="bi bi-search" aria-hidden="true"></i>
+                <span class="btn__text">Buscar</span>
+              </button>
+            </div>
+            <p id="searchHelp" class="form-help">
+              Dica: use teclas ← → para navegar entre Pokémon anteriores e
+              próximos.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="pokedex" aria-labelledby="pokedex-title">
+        <div class="container">
+          <h2 id="pokedex-title">Entrada da Pokédex</h2>
+
+          <article
+            class="pokemon-card"
+            itemscope
+            itemtype="https://schema.org/Thing"
+            aria-live="polite"
+          >
+            <header class="pokemon-card__header">
+              <h3 class="pokemon-card__name" id="pokemonName" itemprop="name">
+                —
+              </h3>
+              <p class="pokemon-card__id" id="pokemonId">#—</p>
+            </header>
+
+            <figure class="pokemon-card__media">
+              <img
+                id="pokemonSprite"
+                class="pokemon-card__image"
+                src=""
+                alt="Sprite do Pokémon"
+                width="256"
+                height="256"
+                decoding="async"
+                fetchpriority="high"
+              />
+              <figcaption class="visually-hidden">
+                Sprite frontal oficial
+              </figcaption>
+            </figure>
+
+            <div class="pokemon-meta">
+              <ul
+                class="pokemon-types"
+                id="pokemonTypes"
+                aria-label="Tipos do Pokémon"
+              >
+                <!-- <li class="type badge type--electric">Electric</li> ... -->
+              </ul>
+
+              <dl class="pokemon-measures">
+                <div class="measure">
+                  <dt class="measure__label">Altura</dt>
+                  <dd class="measure__value" id="pokemonHeight">—</dd>
+                </div>
+                <div class="measure">
+                  <dt class="measure__label">Peso</dt>
+                  <dd class="measure__value" id="pokemonWeight">—</dd>
+                </div>
+                <div class="measure">
+                  <dt class="measure__label">Habilidades</dt>
+                  <dd class="measure__value" id="pokemonAbilities">—</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="pokemon-stats">
+              <h4 class="stats__title">Base Stats</h4>
+              <table class="stats-table" aria-describedby="statsNote">
+                <caption class="visually-hidden">
+                  Atributos base de combate
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">HP</th>
+                    <th scope="col">ATK</th>
+                    <th scope="col">DEF</th>
+                    <th scope="col">SP. ATK</th>
+                    <th scope="col">SP. DEF</th>
+                    <th scope="col">SPEED</th>
+                  </tr>
+                </thead>
+                <tbody id="pokemonStats">
+                  <tr>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p id="statsNote" class="stats__note">
+                Valores base oficiais da PokéAPI (Gen 1 compatível).
+              </p>
+            </div>
+
+            <footer class="pokemon-card__footer">
+              <div
+                class="pager"
+                role="navigation"
+                aria-label="Navegação por Pokémon"
+              >
+                <button
+                  class="btn btn--secondary"
+                  type="button"
+                  id="prevBtn"
+                  aria-label="Pokémon anterior"
+                >
+                  <i class="bi bi-arrow-left-circle" aria-hidden="true"></i>
+                  <span class="btn__text">Anterior</span>
+                </button>
+                <button
+                  class="btn btn--secondary"
+                  type="button"
+                  id="nextBtn"
+                  aria-label="Próximo Pokémon"
+                >
+                  <span class="btn__text">Próximo</span>
+                  <i class="bi bi-arrow-right-circle" aria-hidden="true"></i>
+                </button>
+              </div>
+            </footer>
+          </article>
+
+          <section class="seo-copy" aria-label="Guia rápido da Pokédex Gen 1">
+            <h3>O que você encontra nesta Pokédex da primeira geração</h3>
+            <ul class="seo-list">
+              <li>
+                Busca rápida por <strong>nome</strong> ou
+                <strong>#ID</strong> (ex.: Bulbasaur #001, Charizard #006).
+              </li>
+              <li>
+                Lista de <strong>tipos de Pokémon</strong> (Fire, Water, Grass,
+                Electric, etc.).
+              </li>
+              <li>
+                <strong>Base stats</strong> claros para comparação (HP, Attack,
+                Defense, Special Attack, Special Defense, Speed).
+              </li>
+              <li>
+                Sprite oficial, <strong>altura</strong>, <strong>peso</strong> e
+                <strong>habilidades</strong>.
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">Sobre a Classic Pokédex</h2>
+          <p>
+            Esta Pokédex inspira-se no visual clássico da
+            <strong>Gen 1</strong>, priorizando <strong>acessibilidade</strong>,
+            <strong>desempenho</strong> e <strong>SEO</strong>. Os dados são
+            carregados da <em>PokéAPI</em>, uma base pública com informações
+            atualizadas de Pokémon.
+          </p>
+        </div>
+      </section>
+
+      <section id="faq" class="faq" aria-labelledby="faq-title">
+        <div class="container">
+          <h2 id="faq-title">Perguntas frequentes</h2>
+          <details>
+            <summary>Quais gerações são suportadas?</summary>
+            <p>
+              O layout é focado na Gen 1, mas a busca funciona para todos os
+              Pokémon disponíveis na PokéAPI.
+            </p>
+          </details>
+          <details>
+            <summary>Posso procurar por nome ou número?</summary>
+            <p>
+              Sim. Pesquise por nomes como “pikachu” ou pelo número como “25”.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>
+          © <span id="year"></span> Classic Pokédex. Não oficial — dados via
+          PokéAPI.
+        </p>
+      </div>
+    </footer>
+
+    <!-- plugue seu JS aqui (fetch na sua API Node/Express) -->
+    <script src="assets/js/main.js" defer></script>
+    <script>
+      // apenas para atualizar o ano no rodapé
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
