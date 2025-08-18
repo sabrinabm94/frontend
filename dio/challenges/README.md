@@ -38,6 +38,12 @@ Identifica a pontuação de experiência de herois e define um nível para eles.
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/javascript/hero-classification.js)
 
+## Desafio 7 - Portfólio profissional completo
+
+Desenvolvimento de um portfólio para apresentação profissional com tecnologias de frontend inspirado em protótipo do [Figma](https://www.figma.com/design/NkndT2SbyHJZWLEsaM8Xn3/DIO-Lab-Portf%C3%B3lio?t=L8P8lWkbnbLyRGA5-0) e seguindo os detalhes do [desafio](https://github.com/elidianaandrade/dio-lab-portfolio/blob/main/README.md);
+
+[Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/portfolio/index.html)
+
 # Artigos
 
 Publicações feitas de assuntos estudados nas formações de front-end.
