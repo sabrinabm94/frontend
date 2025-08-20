@@ -49,12 +49,14 @@ Desenvolvimento de um portfólio para apresentação profissional com tecnologia
 Desenvolvimento de uma página de acesso a dados de pokemons consumindo os dados de api pública PokeAPI, seguindo os detalhes do [desafio](https://github.com/digitalinnovationone/js-developer-pokedex/blob/main/README.md);
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/pokedex/public/index.html)
+[GitHub Pages](https://sabrinabm94.github.io/frontend/dio/challenges/portfolio/index.html)
 
 ## Desafio 9 - Currículo digital
 
 Desenvolvimento de uma página para currículo virtual profissional inspirado em protótipo do [Figma](https://www.figma.com/file/g6zA6klLrCWZAp76tzoVJZ/Portfolio---EDUCATION?node-id=0%3A1) e seguindo os detalhes do [desafio](https://github.com/digitalinnovationone/js-developer-portfolio);
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/curriculo-digital/index.html)
+[GitHub Pages](https://sabrinabm94.github.io/frontend/dio/challenges/curriculo-digital/index.html)
 
 # Artigos
 
