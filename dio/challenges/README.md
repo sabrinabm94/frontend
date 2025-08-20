@@ -50,6 +50,12 @@ Desenvolvimento de uma página de acesso a dados de pokemons consumindo os dados
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/pokedex/public/index.html)
 
+## Desafio 9 - Currículo digital
+
+Desenvolvimento de uma página para currículo virtual profissional inspirado em protótipo do [Figma](https://www.figma.com/file/g6zA6klLrCWZAp76tzoVJZ/Portfolio---EDUCATION?node-id=0%3A1) e seguindo os detalhes do [desafio](https://github.com/digitalinnovationone/js-developer-portfolio);
+
+[Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/curriculo-digital/index.html)
+
 # Artigos
 
 Publicações feitas de assuntos estudados nas formações de front-end.
