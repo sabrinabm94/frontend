@@ -43,13 +43,14 @@ Identifica a pontuação de experiência de herois e define um nível para eles.
 Desenvolvimento de um portfólio para apresentação profissional com tecnologias de frontend inspirado em protótipo do [Figma](https://www.figma.com/design/NkndT2SbyHJZWLEsaM8Xn3/DIO-Lab-Portf%C3%B3lio?t=L8P8lWkbnbLyRGA5-0) e seguindo os detalhes do [desafio](https://github.com/elidianaandrade/dio-lab-portfolio/blob/main/README.md);
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/portfolio/index.html)
+[GitHub Pages](https://sabrinabm94.github.io/frontend/dio/challenges/portfolio/index.html)
 
 ## Desafio 8 - Pokedex
 
 Desenvolvimento de uma página de acesso a dados de pokemons consumindo os dados de api pública PokeAPI, seguindo os detalhes do [desafio](https://github.com/digitalinnovationone/js-developer-pokedex/blob/main/README.md);
 
 [Link](https://github.com/sabrinabm94/frontend/blob/master/dio/challenges/pokedex/public/index.html)
-[GitHub Pages](https://sabrinabm94.github.io/frontend/dio/challenges/portfolio/index.html)
+[GitHub Pages](https://sabrinabm94.github.io/frontend/dio/challenges/pokedex/public/index.html)
 
 ## Desafio 9 - Currículo digital
 
