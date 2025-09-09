@@ -1,0 +1,14 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serve public",
+    "build": "echo 'Build step não necessário para HTML puro' && exit 0",
+    "deploy": "firebase deploy",
+    "dev": "firebase serve"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "description": ""
+}

@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+    {
+      "source": "/",
+      "destination": "https://especialistaswp.com.br",
+      "type": 301
+    }
+  ]
+  },
+  "database": {
+    "rules": "database.rules.json"
+  }
+}

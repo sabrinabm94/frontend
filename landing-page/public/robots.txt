@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://especialistaswordpress.com.br/sitemap.xml
