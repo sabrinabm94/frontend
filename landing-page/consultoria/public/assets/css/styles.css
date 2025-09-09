@@ -245,6 +245,8 @@ h4 {
   color: var(--link-color);
   cursor: pointer;
   transition: ease-in-out 0.4s;
+  border: none;
+  background-color: transparent;
 }
 
 /* =========================
