@@ -7,10 +7,11 @@
     "mkdir": "mkdirp public/assets",
     "copy": "cpy \"index.html\" \"public/\" && cpy \"assets/**/*\" \"public/assets\"",
     "start": "npx serve public",
-    "build": "echo \"Build step não necessário para HTML puro\" && exit 0",
+    "build": "npm-run-all clean mkdir copy",
     "firebase": "firebase deploy",
-    "deploy": "npm-run-all clean mkdir copy firebase",
-    "dev": "firebase serve"
+    "local": "firebase serve",
+    "deploy": "npm run build && npm run firebase",
+    "dev": "npm run build && npm run local"
   },
   "author": "",
   "license": "UNLICENSED",

@@ -46,8 +46,48 @@
   scrollbar-color: var(--secondary-bg-color) transparent;
 }
 
+.hide {
+  display: none;
+}
+
 .about .image {
   width: 300px;
+}
+
+.case__item {
+  position: relative;
+  margin-top: -5px;
+}
+
+.case__item img {
+  filter: opacity(0.8);
+  width: 100%;
+}
+
+.case__item:hover img {
+  filter: opacity(0.3);
+}
+
+.case__item:hover figcaption {
+  display: block;
+}
+
+.case__item figcaption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  z-index: 2;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-weight: 800;
+  font-size: 20px;
+  display: none;
+}
+
+.cases .btn {
+  z-index: 2;
+  margin-bottom: 40px;
 }
 
 body {
@@ -74,11 +114,6 @@ li {
 
 p {
   text-align: justify;
-}
-
-img {
-  margin: 0 auto;
-  display: block;
 }
 
 /* =========================
@@ -784,15 +819,23 @@ footer p {
 /* =========================
    SERVIÇOS
 ========================= */
-.section__wrapper {
+.section__wrapper,
+.case__wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
 }
 
-.section__wrapper .section_item {
+.section__wrapper {
+  gap: 2rem;
+}
+
+.section__wrapper .section_item,
+.case__item {
   flex: 1 1 100%; /* padrão mobile: ocupa 100% */
+}
+
+.section__wrapper .section_item {
   background-color: var(--color-bg-secondary);
   border-radius: 1rem;
   padding: 1.5rem;
@@ -808,14 +851,19 @@ footer p {
 .image {
   width: 300px;
   object-fit: cover;
+}
+
+.section__item .image {
   border-radius: 1rem;
+  margin: 0 auto;
+  display: block;
 }
 
 .experts .image {
   width: 150px;
 }
 
-.image,
+.section__item .image,
 figcaption,
 .faq__item {
   margin-bottom: 1rem;
@@ -893,13 +941,13 @@ figcaption,
   border-top: 1px solid var(--link-color);
 }
 
-.section__wrapper .section__item h3 {
+.section__item h3 {
   margin: 1rem 0 0.5rem;
   font-size: 1.25rem;
   color: var(--color-link);
 }
 
-.section__wrapper .section__item p {
+.section__item p {
   font-size: 0.95rem;
   color: var(--color-text-secondary);
   margin-bottom: 8px;
@@ -924,9 +972,11 @@ figcaption,
    RESPONSIVIDADE SERVIÇOS
 ========================= */
 @media (min-width: 768px) {
-  .section__wrapper .section__item {
+  .section__wrapper .section__item,
+  .case__item {
     flex: 1 1 48%; /* notebooks: 2 por linha */
   }
+
   .big-numbers,
   .depoiments-wrapper {
     flex-direction: row;
@@ -934,7 +984,8 @@ figcaption,
 }
 
 @media (min-width: 1200px) {
-  .section__wrapper .section__item {
+  .section__wrapper .section__item,
+  .case__item {
     flex: 1 1 30%; /* telas grandes: 3 por linha */
   }
 }
