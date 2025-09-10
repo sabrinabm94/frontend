@@ -195,7 +195,7 @@ h4 {
   align-items: center;
   width: 100%;
   padding: 0.5rem 1rem;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header__brand .brand__logo {
