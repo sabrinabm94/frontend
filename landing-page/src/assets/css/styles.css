@@ -149,7 +149,6 @@ h1 {
 h2 {
   font-size: 2rem;
   text-align: center;
-  letter-spacing: 0.4rem;
 }
 h3 {
   font-size: 1.8rem;
@@ -363,7 +362,6 @@ main {
 .technologies h2 {
   font-size: 2rem;
   text-transform: none;
-  letter-spacing: normal;
   text-align: start;
 }
 
@@ -916,7 +914,6 @@ figcaption,
 
 .medium-title {
   font-size: 30px;
-  letter-spacing: 5px;
 }
 
 /* Estilo dos itens do FAQ */
