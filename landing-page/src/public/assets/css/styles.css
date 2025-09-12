@@ -148,7 +148,6 @@ h1 {
 }
 h2 {
   font-size: 2rem;
-  text-align: center;
 }
 h3 {
   font-size: 1.8rem;
@@ -585,10 +584,17 @@ main {
   align-items: center;
   gap: 1.5rem;
 }
-
+h2,
 .contact p,
 .contact__buttons a,
-.center {
+.center,
+.btn,
+footer p,
+.whatsapp-float,
+.section h2,
+.section h3,
+.section p,
+.section__wrapper .section_item, .medium-cta {
   text-align: center;
 }
 .contact .btn {
@@ -620,7 +626,6 @@ footer {
 
 footer p {
   font-size: 0.875rem;
-  text-align: center;
   padding: 1rem;
 }
 
@@ -636,7 +641,6 @@ footer p {
   background-color: #25d366;
   color: #fff;
   border-radius: 50%;
-  text-align: center;
   font-size: 1.875rem;
   z-index: 100;
   display: flex;
@@ -665,7 +669,6 @@ footer p {
 .section h2,
 .section h3,
 .section p {
-  text-align: center;
   margin: 0.625rem 0;
 }
 
@@ -845,7 +848,6 @@ footer p {
   background-color: var(--color-bg-secondary);
   border-radius: 1rem;
   padding: 1.5rem;
-  text-align: center;
   box-shadow: 0 0 10px var(--color-shadow);
   transition: transform 0.3s;
 }
@@ -893,7 +895,6 @@ figcaption,
 
 .blog-post figure,
 .medium-cta {
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -901,6 +902,10 @@ figcaption,
   text-transform: math-auto;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.medium-cta {
+  margin-top: 15px;
 }
 
 /* FAQ Section */
