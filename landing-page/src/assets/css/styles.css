@@ -900,7 +900,6 @@ figcaption,
 }
 
 .blog-post h2 {
-  font-size: 1.8rem;
   text-transform: math-auto;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -980,8 +979,12 @@ figcaption,
 
 .section__item h3 {
   margin: 1rem 0 0.5rem;
-  font-size: 1.25rem;
   color: var(--color-link);
+}
+
+.section__item h3,
+.blog-post h2 {
+  font-size: 1.25rem;
 }
 
 .section__item p {
@@ -1017,6 +1020,10 @@ figcaption,
   .big-numbers,
   .depoiments-wrapper {
     flex-direction: row;
+  }
+
+  .blog-post h2 {
+    font-size: 1.8rem;
   }
 }
 
