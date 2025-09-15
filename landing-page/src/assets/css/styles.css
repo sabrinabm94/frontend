@@ -22,7 +22,7 @@
 
 /* Tema Light */
 :root[data-theme="light"] {
-  --bg-color: #fbf8e6;
+  --bg-color: #d9dbf3;
   --text-color: #222222;
   --header-bg: #f5f5f5;
   --link-color: #0b4f93;
@@ -46,6 +46,16 @@
   list-style: none;
   scrollbar-width: thin;
   scrollbar-color: var(--secondary-bg-color) transparent;
+}
+
+ul,
+ol {
+  padding: 20px 40px 20px 40px;
+}
+
+ul li,
+ol li {
+  list-style: disc;
 }
 
 .hide {
@@ -72,7 +82,8 @@
 
 .case__item:hover figcaption,
 .section__item .image,
-.blog-post {
+.blog-post,
+.post-meta {
   display: block;
 }
 
@@ -325,7 +336,6 @@ h4 {
 /* =========================
    Main, Sections & Layout
 ========================= */
-main,
 .projects,
 .about,
 .contact {
@@ -387,6 +397,10 @@ main {
 
 .main-section {
   border-bottom: 0.0625rem solid var(--primary-border-color);
+}
+
+.main-section,
+.medium-cta {
   padding: 2rem;
 }
 
@@ -584,6 +598,11 @@ main {
   align-items: center;
   gap: 1.5rem;
 }
+
+.blog-post h2 {
+  text-align: left;
+}
+
 h2,
 .contact p,
 .contact__buttons a,
@@ -594,7 +613,8 @@ footer p,
 .section h2,
 .section h3,
 .section p,
-.section__wrapper .section_item, .medium-cta {
+.section__wrapper .section_item,
+.medium-cta {
   text-align: center;
 }
 .contact .btn {
@@ -662,10 +682,6 @@ footer p {
   padding: 0.625rem;
 }
 
-.blog-post h2 {
-  text-align: left;
-}
-
 .section h2,
 .section h3,
 .section p {
@@ -700,7 +716,6 @@ footer p {
     padding: 20px;
   }
 
-  main,
   .projects,
   .about {
     padding: 2rem 4rem 2rem 4rem;
@@ -761,9 +776,6 @@ footer p {
     font-size: 3rem;
   }
 
-  main {
-    padding: 6rem 4rem 2rem;
-  }
   .main__content1 .btn {
     width: auto;
   }
@@ -815,9 +827,7 @@ footer p {
   .header {
     padding: 1rem 15rem;
   }
-  main {
-    padding: 12rem 15rem 2rem;
-  }
+
   .technologies,
   .projects,
   .about {
@@ -866,12 +876,16 @@ footer p {
   height: 100%;
 }
 
-.blog-post {
+.post-content,
+.post-meta,
+.post-title {
   max-width: 900px;
 }
 
 .section__item .image,
-.blog-post {
+.post-content,
+.post-meta,
+.post-title {
   margin: 0 auto;
 }
 
@@ -901,11 +915,25 @@ figcaption,
 .blog-post h2 {
   text-transform: math-auto;
   margin-top: 20px;
+}
+
+.blog-post h2,
+.main-section .btn {
   margin-bottom: 10px;
 }
 
-.medium-cta {
-  margin-top: 15px;
+.medium-cta,
+.section__wrapper,
+.blog-post figure,
+.post-meta,
+.blog-post figcaption {
+  margin-top: 10px;
+}
+
+.blog-post figure,
+.post-meta,
+.blog-post figcaption {
+  margin-bottom: 10px;
 }
 
 /* FAQ Section */
@@ -1013,6 +1041,15 @@ figcaption,
 /* =========================
    RESPONSIVIDADE SERVIÇOS
 ========================= */
+
+@media (max-width: 767px) {
+  .post-content,
+  .post-meta,
+  .post-title {
+    padding: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .section__wrapper .section__item,
   .case__item {
