@@ -1,673 +1,574 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="Consultoria especializada em sites corporativos: manutenção, atualização, segurança e SEO. Mantenha seu site rápido, seguro e pronto para gerar clientes."
-    />
 
-    <title>Especialistas em Sites - Atualização, Manutenção e SEO</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      rel="preload"
-      as="style"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
+  <meta name="description"
+    content="Especialistas em Sites — manutenção, correção e otimização para sites lentos. Recuperamos desempenho, configuramos servidores corretamente e melhoramos seu posicionamento no Google." />
+  <meta name="keywords"
+    content="site lento, site lento como resolver, site lento o que fazer, site lento para abrir, otimização de sites, manutenção de sites WordPress, configuração do servidor, performance web, especialistas em sites, acelerar site" />
+  <title>Especialistas em Sites — Manutenção, Correção e Otimização de Sites Lentos</title>
+  <link rel="canonical" href="https://especialistaswp.com.br/" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <nav class="header__nav">
-        <a href="#sobre" class="menu__link">Quem Somos</a>
-        <a href="#servicos" class="menu__link">Serviços</a>
-        <a href="#orcamento" class="menu__link">Orçamento</a>
-        <a href="#experiencia" class="menu__link">Nossa Expertise</a>
-        <a href="#faq" class="menu__link">FAQ</a>
-        <a href="#contato" class="menu__link">Contato</a>
-        <div class="header__toggle">
-          <button id="toggleTheme">Mudar tema</button>
-        </div>
-      </nav>
-    </header>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap" rel="stylesheet" />
 
-    <main>
-      <!-- HERO -->
-      <section class="hero main-section center">
-        <h1>Seu site pode estar perdendo clientes sem você perceber</h1>
+  <!-- Structured Data: Organization + FAQ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Especialistas em Sites",
+      "url": "https://especialistasemsites.com.br",
+      "logo": "https://especialistaswp.com.br/assets/images/logo.png",
+      "sameAs": [],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+55-47-99957-1726",
+        "contactType": "customer service",
+        "areaServed": "BR",
+        "availableLanguage": ["Portuguese"]
+      }]
+    }
+    </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Por que meu site está lento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A lentidão pode ser causada por imagens pesadas, plugins desatualizados, hospedagem com recursos insuficientes, falta de cache, ou configuração incorreta do servidor. Fazemos uma análise completa para identificar o gargalo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que fazer quando o site está lento para abrir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ações imediatas: habilitar cache, otimizar imagens, desativar plugins não essenciais e verificar a configuração do servidor (versão do PHP, compressão GZIP, HTTP/2, CDN). Se necessário, restaurar backup ou migrar para hospedagem mais adequada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como a configuração do servidor impacta a performance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Servidor mal configurado causa tempo de resposta elevado, falhas de processamento e até queda de indexação. Ajustes de PHP, cache no servidor, compressão e HTTP/2 reduzem latência e melhoram desempenho e SEO."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <nav class="header__nav" role="navigation" aria-label="Menu principal">
+      <a href="#sobre" class="menu__link">Quem Somos</a>
+      <a href="#servicos" class="menu__link">Serviços</a>
+      <a href="#orcamento" class="menu__link">Orçamento</a>
+      <a href="#experiencia" class="menu__link">Nossa Expertise</a>
+      <a href="#faq" class="menu__link">FAQ</a>
+      <a href="#blog" class="menu__link">Blog</a>
+      <a href="#contato" class="menu__link">Contato</a>
+      <div class="header__toggle">
+        <button id="toggleTheme" aria-pressed="false">Mudar tema</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero main-section" aria-labelledby="hero-title">
+      <div class="center">
+        <h1 id="hero-title">Seu site pode estar perdendo clientes sem você perceber</h1>
         <p>
-          Sites lentos, desatualizados ou inseguros afastam visitantes e fazem
-          negócios perderem dinheiro todos os dias. Nossa equipe garante que seu
-          site seja <strong>rápido, seguro e otimizado</strong>, para que você
-          foque no que realmente importa: o crescimento do seu negócio.
+          Sites lentos, desatualizados ou inseguros afastam visitantes e fazem negócios perderem receitas todos os dias.
+          A <strong>Especialistas em Sites</strong> garante que seu site seja <strong>rápido, seguro e
+            otimizado</strong>,
+          permitindo que você foque no crescimento do seu negócio.
         </p>
-        <div class="section medium-cta">
-          <a
-            href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20para%20meu%20site"
-            class="btn btn--primary"
-            >Peça um diagnóstico gratuíto</a
-          >
-          <i class="escassez"
-            >Atendemos apenas 5 novos projetos por mês para garantir qualidade
-            total ao nossos clientes</i
-          >
-          <i>Agende sua vaga!</i>
-        </div>
-      </section>
-
+      </div>
+      <br />
+      <br />
       <!-- PROBLEMAS COMUNS -->
-      <section id="problemas" class="section main-section">
-        <h2>3 sinais de que seu site precisa de manutenção urgente</h2>
-        <ul>
-          <li>
-            <strong>Lentidão:</strong> páginas demoram pra carregar e os
-            clientes desistem de tentar acessar seu site.
-          </li>
-          <li>
-            <strong>Erros e falhas:</strong> formulários carregam, botões que
-            não funcionam e páginas quebradas.
-          </li>
-          <li>
-            <strong>Segurança frágil:</strong> invasões recorrentes, site caíndo
-            e alterações não programadas.
-          </li>
-        </ul>
-        <div class="section medium-cta">
-          <a
-            href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20meu%20site%20precisa%20de%20ajuda"
-            class="btn btn--secondary"
-            >Quero verificar meu site agora</a
-          >
-        </div>
-      </section>
+      <h3>3 sinais de que seu site precisa de manutenção urgente</h3>
+      <ul>
+        <li>
+          <strong>Lentidão:</strong> páginas demoram para carregar e potenciais clientes desistem.
+        </li>
+        <li>
+          <strong>Erros e falhas:</strong> formulários não enviam, botões não funcionam e páginas quebradas.
+        </li>
+        <li>
+          <strong>Segurança frágil:</strong> invasões recorrentes, alterações não autorizadas ou perda de dados.
+        </li>
+      </ul>
+    </section>
 
-      <!-- QUEM SOMOS -->
-      <section id="sobre" class="about main-section">
-        <h2>Quem Somos</h2>
-        <div class="section__wrapper">
-          <div class="section__item">
-            <p>
-              Somos uma equipe dedicada à
-              <strong>manutenção, atualização e SEO de sites</strong>
-              para empresas que buscam resultados reais e presença digital de
-              alto nível.
-            </p>
-            <p>
-              Atuamos em toda a gestão de sites corporativos: correção de erros,
-              <strong>otimização de performance</strong>,
-              <strong>alterações de layout</strong>,
-              <strong>produção de conteúdo</strong> e acompanhamento com
-              métricas.
-            </p>
-            <p>
-              Com <strong>anos de experiência</strong> e dezenas de projetos
-              concluídos, entregamos soluções personalizadas para aumentar
-              tráfego, engajamento e conversões.
-            </p>
-          </div>
-          <div class="section__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/landing-page/wordpress.webp"
-                alt="Consultoria de sites profissionais"
-                width="300"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">
-                Consultoria de Sites Profissionais
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- SERVIÇOS -->
-      <section id="servicos" class="section interative main-section">
-        <h2>Nossos Serviços</h2>
-        <h3>Conheça como cuidamos do seu site</h3>
-        <div class="section__wrapper">
-          <div class="section__item">
-            <figure class="section__image">
-              <img
-                class="image"
-                src="assets/images/landing-page/plugin-wordpress.webp"
-                alt=" Serviço de atualização de plugins para sites"
-                width="200"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center hide">
-                Serviço de atualização de plugins para sites
-              </figcaption>
-            </figure>
-            <h3>Manutenção e Atualização</h3>
-            <p>
-              Garantimos que seu site esteja sempre atualizado, seguro e
-              compatível com as tecnologias mais recentes.
-            </p>
-          </div>
-          <div class="section__item">
-            <figure class="section__image">
-              <img
-                class="image"
-                src="assets/images/landing-page/site-com-erro.webp"
-                alt="Serviço correção de erro em sites"
-                width="320"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center hide">
-                Serviço correção de erro em sites
-              </figcaption>
-            </figure>
-            <h3>Correção de Erros</h3>
-            <p>
-              Detectamos e corrigimos problemas técnicos, evitando falhas que
-              prejudicam a experiência do cliente.
-            </p>
-          </div>
-          <div class="section__item">
-            <figure class="section__image">
-              <img
-                class="image"
-                src="assets/images/landing-page/otimizacao-seo.webp"
-                alt="Otimização de SEO e revisão de performance"
-                width="200"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center hide">
-                Otimização de SEO e revisão de performance
-              </figcaption>
-            </figure>
-            <h3>SEO e Performance</h3>
-            <p>
-              Melhoramos velocidade e posicionamento no Google, atraindo mais
-              visitantes qualificados para o seu site.
-            </p>
-          </div>
-          <div class="section__item">
-            <figure class="section__image">
-              <img
-                class="image"
-                src="assets/images/landing-page/tema-wordpress.webp"
-                alt="alterações visuais em páginas de sites"
-                width="200"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center hide">
-                alterações visuais em páginas de sites
-              </figcaption>
-            </figure>
-            <h3>Alterações de Layout</h3>
-            <p>
-              Personalizamos cores, estilos e design para alinhar o site à
-              identidade do seu negócio.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ORÇAMENTO -->
-      <section id="orcamento" class="section medium-cta main-section">
-        <h2 class="medium-title">Precisa de ajuda com seu site?</h2>
-        <h3>Receba um orçamento gratuito em minutos!</h3>
-        <a
-          href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20site"
-          class="btn btn--primary"
-          >Solicitar Orçamento</a
-        >
-      </section>
-
-      <!-- NOSSA EXPERTISE -->
-      <section id="experiencia" class="section">
-        <h2>Nossa Expertise</h2>
-        <p>
-          Especializados em <strong>sites corporativos</strong>, garantimos
-          <strong>segurança, velocidade e SEO estratégico</strong> para levar
-          seu negócio ao próximo nível.
-        </p>
-        <div class="big-numbers">
-          <span class="big-number">
-            <h3 class="big-title center">+1.000</h3>
-            <p>projetos entregues</p>
-          </span>
-          <span class="big-number">
-            <h3 class="big-title center">90%</h3>
-            <p>satisfação dos clientes</p>
-          </span>
-        </div>
-      </section>
-
-      <!-- CASES -->
-      <section id="cases" class="cases section main-section">
-        <h2>Cases de Sucesso</h2>
-        <p>
-          Já ajudamos empresas de diferentes setores a recuperar sites
-          invadidos, corrigir erros críticos e conquistar melhores posições no
-          Google.
-        </p>
-        <h3>Principais cases</h3>
-        <div class="case__wrapper">
-          <div class="case__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-1.webp"
-                alt="Case da empresa Nobel Biocare"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">
-                Case da empresa Nobel Biocare
-              </figcaption>
-            </figure>
-          </div>
-          <div class="case__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-2.webp"
-                alt="Case da empresa Semantix"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">Case da empresa Semantix</figcaption>
-            </figure>
-          </div>
-          <div class="case__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-3.webp"
-                alt="Case da empresa Hacker"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">Case da empresa Hacker</figcaption>
-            </figure>
-          </div>
-          <div class="case__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-4.webp"
-                alt="Case da empresa Daico"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">Case da empresa Daico</figcaption>
-            </figure>
-          </div>
-          <div class="case__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-5.webp"
-                alt="Case da empresa Arctec"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">Case da empresa Arctec</figcaption>
-            </figure>
-          </div>
-          <div class="case__item hide">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-6.webp"
-                alt="Case da empresa Dheka"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">Case da empresa Dheka</figcaption>
-            </figure>
-          </div>
-          <div class="case__item hide">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-7.webp"
-                alt="Case da empresa Blest"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">Case da empresa Blest</figcaption>
-            </figure>
-          </div>
-          <div class="case__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-8.webp"
-                alt="Case da empresa Expdata"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">Case da empresa Expdata</figcaption>
-            </figure>
-          </div>
-          <div class="case__item hide">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-9.webp"
-                alt="Case da Ursula Tuma Consultoria"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">
-                Case da Ursula Tuma Consultoria
-              </figcaption>
-            </figure>
-          </div>
-          <div class="case__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-10.webp"
-                alt="Case da Fundação Sobrevivi"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">Case da Fundação Sobrevivi</figcaption>
-            </figure>
-          </div>
-          <div class="case__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/cases/case-11.webp"
-                alt="Case da ONG Turma do Gatil"
-                width="400"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">Case da ONG Turma do Gatil</figcaption>
-            </figure>
-          </div>
-        </div>
-        <a
-          href="assets/documents/portfolio-site.pdf"
-          class="btn btn--primary"
-          target="_blank"
-          >Ver Cases Completos</a
-        >
-      </section>
-
-      <!-- ESPECIALISTAS -->
-      <section id="experts" class="section experts">
-        <h2>Nossos Especialistas</h2>
-        <p>
-          Nossa equipe é formada por engenheiros e desenvolvedores experientes,
-          prontos para manter seu site funcionando sem falhas.
-        </p>
-        <div class="section__wrapper">
-          <div class="section__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/team/sabrina.webp"
-                alt="Sabrina engenheira de software"
-                width="150"
-                height="150"
-                loading="lazy"
-              />
-              <figcaption class="center">
-                Sabrina - Engenheira de Software
-              </figcaption>
-            </figure>
-          </div>
-          <div class="section__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/team/ricardo.webp"
-                alt="Ricardo analista de sistemas"
-                width="150"
-                height="150"
-                loading="lazy"
-              />
-              <figcaption class="center">
-                Ricardo - Analista de sistemas
-              </figcaption>
-            </figure>
-          </div>
-          <div class="section__item">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/team/joao.webp"
-                alt="João desenvolvedor de software"
-                width="150"
-                height="150"
-                loading="lazy"
-              />
-              <figcaption class="center">
-                João - Desenvolvedor de Software
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section class="section small-cta main-section">
-        <h2 class="medium-title">Fale com um especialista agora!</h2>
-        <a
-          href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20quero%20ajuda%20especializada%20para%20meu%20site"
-          class="btn btn--primary"
-          >Entrar em Contato</a
-        >
-      </section>
-
-      <!-- DEPOIMENTOS -->
-      <section id="depoiments" class="section main-section">
-        <h2>O que dizem nossos clientes</h2>
-        <div class="depoiments-wrapper">
-          <div class="depoiment-item">
-            <p class="name">Juliana Batiste</p>
-            <p class="review">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </p>
-            <p class="description">
-              Meu site estava lento e sumindo no Google. A equipe fez uma
-              análise completa, otimizou tudo e hoje tenho novos clientes toda
-              semana.
-            </p>
-          </div>
-          <div class="depoiment-item">
-            <p class="name">Ricardo Menezes</p>
-            <p class="review">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </p>
-            <p class="description">
-              Eu tinha medo de atualizar meu site e quebrar tudo. A consultoria
-              cuidou com segurança e ainda melhorou a performance. Recomendo!
-            </p>
-          </div>
-          <div class="depoiment-item">
-            <p class="name">Fernanda Oliveira</p>
-            <p class="review">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </p>
-            <p class="description">
-              Meu site foi invadido e achei que tinha perdido tudo. Eles
-              restauraram, reforçaram a segurança e configuraram backups. Hoje
-              estou tranquila para focar no meu negócio.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section id="faq" class="faq main-section">
-        <h2>Perguntas Frequentes</h2>
-        <details class="faq__item">
-          <summary>Por que meu site está lento?</summary>
+    <!-- QUEM SOMOS -->
+    <section id="sobre" class="about main-section" aria-labelledby="sobre-title">
+      <h2 id="sobre-title">Quem Somos</h2>
+      <div class="section__wrapper">
+        <div class="section__item">
           <p>
-            A lentidão pode ser causada por falhas técnicas, excesso de recursos
-            ou falta de otimização. Fazemos uma análise completa para corrigir
-            isso.
+            Somos a <strong>Especialistas em Sites</strong>, equipe dedicada à manutenção, correção e otimização de
+            sites corporativos.
+            Atuamos para entregar sites rápidos, seguros e preparados para converter visitantes em clientes.
           </p>
-        </details>
-        <details class="faq__item">
-          <summary>Meu site precisa de atualização?</summary>
           <p>
-            Se você não lembra a última vez que atualizou seu site, é provável
-            que ele esteja vulnerável. Fazemos a revisão e atualização seguras.
+            Cuidamos de toda a gestão técnica: correção de erros, <strong>otimização de performance</strong>,
+            atualizações seguras,
+            alterações de layout, produção de conteúdo e monitoramento com métricas.
           </p>
-        </details>
-        <details class="faq__item">
-          <summary>Posso personalizar meu layout?</summary>
           <p>
-            Sim! Alteramos cores, estilos e funcionalidades sem comprometer a
-            segurança.
+            Com <strong>anos de experiência</strong> e dezenas de projetos entregues, combinamos práticas de
+            desenvolvimento,
+            SEO técnico e infraestrutura para maximizar tráfego e conversões.
           </p>
-        </details>
-        <details class="faq__item">
-          <summary>Meu site não aparece no Google, o que fazer?</summary>
-          <p>
-            Fazemos uma análise de SEO técnico e aplicamos melhorias para que
-            seu site seja indexado e tenha melhores posições nos buscadores.
-          </p>
-        </details>
-        <details class="faq__item">
-          <summary>Meu site foi hackeado, conseguem restaurar?</summary>
-          <p>
-            Sim. Recuperamos o site, reforçamos a segurança e configuramos
-            backups automáticos.
-          </p>
-        </details>
-        <details class="faq__item">
-          <summary>Quanto custa a manutenção de um site?</summary>
-          <p>
-            O valor depende da complexidade, do tamanho e das necessidades do
-            seu site. Oferecemos planos mensais e pacotes personalizados sob
-            demanda com orçamentos gratuitos, sendo cobrado somente as horas em desenvolvimento.
-          </p>
-        </details>
-        <details class="faq__item">
-          <summary>Vocês trabalham com sites de qualquer plataforma?</summary>
-          <p>
-            Sim! Atuamos em sites corporativos desenvolvidos em diferentes
-            tecnologias. WordPress, sites institucionais, lojas virtuais e
-            sistemas personalizados.
-          </p>
-        </details>
-      </section>
+        </div>
 
-       <!-- Blog -->
-      <section id="blog" class="section blog main-section">
-        <h2>Últimas postagens</h2>
-        <p>
-          Veja as dicas que preparamos para ajudar você com seu site!
-        </p>
-        <div class="section__wrapper">
-          <div class="section__item">
-            <a href="./blog/o-seu-site-caiu.html" target="_blank">
-            <figure>
-              <img
-                class="image"
-                src="assets/images/blog/o-seu-site-caiu.webp"
-                alt="O seu site caiu? Veja como resolver!"
-                width="300"
-                height="200"
-                loading="lazy"
-              />
-              <figcaption class="center">
-                O seu site caiu? Veja como resolver!
-              </figcaption>
-            </figure>
-            </a>
+        <div class="section__item">
+          <figure>
+            <img class="image" src="assets/images/landing-page/wordpress.webp"
+              alt="Especialistas em manutenção e SEO de sites corporativos" width="300" height="200" loading="lazy" />
+            <figcaption class="center">Especialistas em Sites Profissionais</figcaption>
+          </figure>
+        </div>
+        <div>
+          <div class="section medium-cta">
+            <i aria-hidden="false">
+              Atendemos apenas 5 novos projetos por mês para garantir qualidade total aos nossos clientes.
+            </i>
+            <br />
+            <a href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20para%20meu%20site"
+              class="btn btn--primary">Peça um diagnóstico gratuito</a>
+            <i aria-hidden="false">
+              Agende sua vaga.
+            </i>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- CONTATO -->
-      <section id="contato" class="contact main-section">
-        <h2>Contato</h2>
-        <p>
-          Entre em contato pelo WhatsApp ou e-mail e solicite uma análise
-          gratuita para seu <strong>site corporativo</strong>.
-        </p>
-        <div class="contact__buttons">
-          <a
-            href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20vim%20pelo%20site"
-            target="_blank"
-            class="btn btn--primary"
-          >
-            <i class="bi bi-whatsapp"></i> WhatsApp
-          </a>
-          <a href="mailto:sabrinabm94@gmail.com" class="btn btn--primary">
-            <i class="bi bi-envelope"></i> E-mail
-          </a>
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section interative main-section" aria-labelledby="servicos-title">
+      <h2 id="servicos-title">Nossos Serviços</h2>
+      <h3>Como cuidamos do seu site</h3>
+
+      <div class="section__wrapper">
+        <div class="section__item">
+          <figure class="section__image">
+            <img class="image" src="assets/images/landing-page/plugin-wordpress.webp"
+              alt="Atualização de plugins WordPress" width="200" height="200" loading="lazy" />
+          </figure>
+          <h3>Manutenção e Atualização</h3>
+          <p>
+            Atualizamos núcleo, temas e plugins com segurança, reduzindo riscos de incompatibilidade e queda do site.
+          </p>
         </div>
-      </section>
-    </main>
 
-    <!-- BOTÃO FLUTUANTE WHATSAPP -->
-    <a
-      href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20vim%20pelo%20site"
-      target="_blank"
-      class="whatsapp-float"
-    >
-      <i class="bi bi-whatsapp"></i>
-    </a>
+        <div class="section__item">
+          <figure class="section__image">
+            <img class="image" src="assets/images/landing-page/site-com-erro.webp" alt="Correção de erros em sites"
+              width="200" height="200" loading="lazy" />
+          </figure>
+          <h3>Correção de Erros</h3>
+          <p>
+            Identificamos causas de falhas, corrigimos bugs e devolvemos ao ar com estabilidade e segurança.
+          </p>
+        </div>
 
-    <!-- FOOTER -->
-    <footer>
+        <div class="section__item">
+          <figure class="section__image">
+            <img class="image" src="assets/images/landing-page/otimizacao-seo.webp"
+              alt="Otimização de SEO e performance" width="200" height="200" loading="lazy" />
+          </figure>
+          <h3>SEO e Performance</h3>
+          <p>
+            Otimizamos conteúdo, estrutura e velocidade (PageSpeed, GTmetrix), melhorando visibilidade e conversões
+            orgânicas.
+          </p>
+        </div>
+
+        <div class="section__item">
+          <figure class="section__image">
+            <img class="image" src="assets/images/landing-page/tema-wordpress.webp" alt="Alterações de layout em sites"
+              width="200" height="200" loading="lazy" />
+          </figure>
+          <h3>Alterações de Layout</h3>
+          <p>
+            Personalizamos design e experiência do usuário sem comprometer a performance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORÇAMENTO -->
+    <section id="orcamento" class="section medium-cta main-section" aria-labelledby="orcamento-title">
+      <h2 id="orcamento-title" class="medium-title">Precisa de ajuda com seu site?</h2>
+      <h3>Receba um orçamento gratuito em minutos</h3>
+      <a href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20site"
+        class="btn btn--primary">Solicitar Orçamento</a>
+    </section>
+
+    <!-- NOSSA EXPERTISE -->
+    <section id="experiencia" class="section" aria-labelledby="experiencia-title">
+      <h2 id="experiencia-title">Nossa Expertise</h2>
       <p>
-        &copy; 2025 Consultoria de Sites |
-        <a href="mailto:sabrinabm94@gmail.com">Atendimento por E-mail</a> |
-        <a
-          href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20vim%20pelo%20site"
-          >Atendimento por WhatsApp</a
-        >
+        Especializados em sites corporativos, garantimos segurança, velocidade e SEO técnico para levar seu negócio ao
+        próximo nível.
       </p>
-    </footer>
+      <div class="big-numbers" role="list">
+        <span class="big-number" role="listitem">
+          <h3 class="big-title center">+1.000</h3>
+          <p>projetos entregues</p>
+        </span>
+        <span class="big-number" role="listitem">
+          <h3 class="big-title center">90%</h3>
+          <p>satisfação dos clientes</p>
+        </span>
+      </div>
+    </section>
 
-    <!-- JS -->
-    <script defer src="assets/js/theme-toggle.js"></script>
-  </body>
+    <!-- CASES -->
+    <section id="cases" class="cases section main-section">
+      <h2>Cases de Sucesso</h2>
+      <p>
+        Já ajudamos empresas de diferentes setores a recuperar sites
+        invadidos, corrigir erros críticos e conquistar melhores posições no
+        Google.
+      </p>
+      <h3>Principais cases</h3>
+      <div class="case__wrapper">
+        <div class="case__item">
+          <figure>
+            <img class="image" src="assets/images/cases/case-1.webp" alt="Case da empresa Nobel Biocare" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">
+              Case da empresa Nobel Biocare
+            </figcaption>
+          </figure>
+        </div>
+        <div class="case__item">
+          <figure>
+            <img class="image" src="assets/images/cases/case-2.webp" alt="Case da empresa Semantix" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">Case da empresa Semantix</figcaption>
+          </figure>
+        </div>
+        <div class="case__item">
+          <figure>
+            <img class="image" src="assets/images/cases/case-3.webp" alt="Case da empresa Hacker" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">Case da empresa Hacker</figcaption>
+          </figure>
+        </div>
+        <div class="case__item">
+          <figure>
+            <img class="image" src="assets/images/cases/case-4.webp" alt="Case da empresa Daico" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">Case da empresa Daico</figcaption>
+          </figure>
+        </div>
+        <div class="case__item">
+          <figure>
+            <img class="image" src="assets/images/cases/case-5.webp" alt="Case da empresa Arctec" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">Case da empresa Arctec</figcaption>
+          </figure>
+        </div>
+        <div class="case__item hide">
+          <figure>
+            <img class="image" src="assets/images/cases/case-6.webp" alt="Case da empresa Dheka" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">Case da empresa Dheka</figcaption>
+          </figure>
+        </div>
+        <div class="case__item hide">
+          <figure>
+            <img class="image" src="assets/images/cases/case-7.webp" alt="Case da empresa Blest" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">Case da empresa Blest</figcaption>
+          </figure>
+        </div>
+        <div class="case__item">
+          <figure>
+            <img class="image" src="assets/images/cases/case-8.webp" alt="Case da empresa Expdata" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">Case da empresa Expdata</figcaption>
+          </figure>
+        </div>
+        <div class="case__item hide">
+          <figure>
+            <img class="image" src="assets/images/cases/case-9.webp" alt="Case da Ursula Tuma Consultoria" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">
+              Case da Ursula Tuma Consultoria
+            </figcaption>
+          </figure>
+        </div>
+        <div class="case__item">
+          <figure>
+            <img class="image" src="assets/images/cases/case-10.webp" alt="Case da Fundação Sobrevivi" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">Case da Fundação Sobrevivi</figcaption>
+          </figure>
+        </div>
+        <div class="case__item">
+          <figure>
+            <img class="image" src="assets/images/cases/case-11.webp" alt="Case da ONG Turma do Gatil" width="400"
+              height="200" loading="lazy" />
+            <figcaption class="center">Case da ONG Turma do Gatil</figcaption>
+          </figure>
+        </div>
+      </div>
+      <a href="assets/documents/portfolio-site.pdf" class="btn btn--primary" target="_blank">Ver Cases Completos</a>
+    </section>
+
+    <!-- ESPECIALISTAS -->
+    <section id="experts" class="section experts">
+      <h2>Nossos Especialistas</h2>
+      <p>
+        Nossa equipe é formada por engenheiros e desenvolvedores experientes,
+        prontos para manter seu site funcionando sem falhas.
+      </p>
+      <div class="section__wrapper">
+        <div class="section__item">
+          <figure>
+            <img class="image" src="assets/images/team/sabrina.webp" alt="Sabrina engenheira de software" width="150"
+              height="150" loading="lazy" />
+            <figcaption class="center">
+              Sabrina - Engenheira de Software
+            </figcaption>
+          </figure>
+        </div>
+        <div class="section__item">
+          <figure>
+            <img class="image" src="assets/images/team/ricardo.webp" alt="Ricardo analista de sistemas" width="150"
+              height="150" loading="lazy" />
+            <figcaption class="center">
+              Ricardo - Analista de sistemas
+            </figcaption>
+          </figure>
+        </div>
+        <div class="section__item">
+          <figure>
+            <img class="image" src="assets/images/team/joao.webp" alt="João desenvolvedor de software" width="150"
+              height="150" loading="lazy" />
+            <figcaption class="center">
+              João - Desenvolvedor de Software
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section small-cta main-section">
+      <h2 class="medium-title">Fale com um especialista agora!</h2>
+      <a href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20quero%20ajuda%20especializada%20para%20meu%20site"
+        class="btn btn--primary">Entrar em Contato</a>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoiments" class="section main-section">
+      <h2>O que dizem nossos clientes</h2>
+      <div class="depoiments-wrapper">
+        <div class="depoiment-item">
+          <p class="name">Juliana Batiste</p>
+          <p class="review">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </p>
+          <p class="description">
+            Meu site estava lento e sumindo no Google. A equipe fez uma
+            análise completa, otimizou tudo e hoje tenho novos clientes toda
+            semana.
+          </p>
+        </div>
+        <div class="depoiment-item">
+          <p class="name">Ricardo Menezes</p>
+          <p class="review">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </p>
+          <p class="description">
+            Eu tinha medo de atualizar meu site e quebrar tudo. A consultoria
+            cuidou com segurança e ainda melhorou a performance. Recomendo!
+          </p>
+        </div>
+        <div class="depoiment-item">
+          <p class="name">Fernanda Oliveira</p>
+          <p class="review">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </p>
+          <p class="description">
+            Meu site foi invadido e achei que tinha perdido tudo. Eles
+            restauraram, reforçaram a segurança e configuraram backups. Hoje
+            estou tranquila para focar no meu negócio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq main-section">
+      <h2>Perguntas Frequentes</h2>
+      <details class="faq__item">
+        <summary>Por que meu site está lento?</summary>
+        <p>
+          A lentidão pode ser causada por falhas técnicas, excesso de recursos
+          ou falta de otimização. Fazemos uma análise completa para corrigir
+          isso.
+        </p>
+      </details>
+      <details class="faq__item">
+        <summary>Meu site precisa de atualização?</summary>
+        <p>
+          Se você não lembra a última vez que atualizou seu site, é provável
+          que ele esteja vulnerável. Fazemos a revisão e atualização seguras.
+        </p>
+      </details>
+      <details class="faq__item">
+        <summary>Posso personalizar meu layout?</summary>
+        <p>
+          Sim! Alteramos cores, estilos e funcionalidades sem comprometer a
+          segurança.
+        </p>
+      </details>
+      <details class="faq__item">
+        <summary>Meu site não aparece no Google, o que fazer?</summary>
+        <p>
+          Fazemos uma análise de SEO técnico e aplicamos melhorias para que
+          seu site seja indexado e tenha melhores posições nos buscadores.
+        </p>
+      </details>
+      <details class="faq__item">
+        <summary>Meu site foi hackeado, conseguem restaurar?</summary>
+        <p>
+          Sim. Recuperamos o site, reforçamos a segurança e configuramos
+          backups automáticos.
+        </p>
+      </details>
+      <details class="faq__item">
+        <summary>Quanto custa a manutenção de um site?</summary>
+        <p>
+          O valor depende da complexidade, do tamanho e das necessidades do
+          seu site. Oferecemos planos mensais e pacotes personalizados sob
+          demanda com orçamentos gratuitos, sendo cobrado somente as horas em desenvolvimento.
+        </p>
+      </details>
+      <details class="faq__item">
+        <summary>Vocês trabalham com sites de qualquer plataforma?</summary>
+        <p>
+          Sim! Atuamos em sites corporativos desenvolvidos em diferentes
+          tecnologias. WordPress, sites institucionais, lojas virtuais e
+          sistemas personalizados.
+        </p>
+      </details>
+      <details class="faq__item">
+        <summary>O que fazer quando o site demora a abrir?</summary>
+        <p>
+          Verificar cache, otimizar imagens, revisar plugins e avaliar a configuração do servidor (versão PHP,
+          compressão, HTTP/2/3 e CDN). Se necessário realizamos correção e migração.
+        </p>
+      </details>
+
+      <details class="faq__item">
+        <summary>Vocês fazem migração de hospedagem?</summary>
+        <p>
+          Sim. Migramos para provedores otimizados, configuramos servidor e CDN, e validamos performance pós-migração.
+        </p>
+      </details>
+
+      <details class="faq__item">
+        <summary>Quanto custa a manutenção?</summary>
+        <p>
+          O valor depende da complexidade e volume de trabalho. Oferecemos planos mensais e pacotes sob demanda.
+          Solicite um orçamento gratuito.
+        </p>
+      </details>
+    </section>
+
+
+    <!-- BLOG -->
+    <section id="blog" class="section blog main-section" aria-labelledby="blog-title">
+      <h2 id="blog-title">Últimas postagens</h2>
+      <p>Veja nossas publicações com dicas práticas para recuperar sites caídos e acelerar sites lentos.</p>
+      <div class="section__wrapper">
+        <div class="section__item">
+          <a href="./blog/o-seu-site-caiu.html" target="_blank" rel="noopener">
+            <figure>
+              <img class="image" src="assets/images/blog/site-caiu.webp" alt="O seu site caiu? Veja como resolver!"
+                width="300" height="300" loading="lazy" />
+              <figcaption class="center">O seu site caiu? Veja como resolver!</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="section__item">
+          <a href="./blog/o-seu-site-esta-lento.html" target="_blank" rel="noopener">
+            <figure>
+              <img class="image" src="assets/images/blog/site-lento.webp"
+                alt="Site Lento? Descubra Como Resolver e Acelerar Seu Site!" width="300" height="300" loading="lazy" />
+              <figcaption class="center">Site Lento? Descubra Como Resolver e Acelerar Seu Site!</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact main-section" aria-labelledby="contato-title">
+      <h2 id="contato-title">Contato</h2>
+      <p>Entre em contato pelo WhatsApp ou e-mail e solicite uma análise gratuita para seu <strong>site
+          corporativo</strong>.</p>
+      <div class="contact__buttons">
+        <a href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank"
+          class="btn btn--primary" rel="noopener">WhatsApp</a>
+        <a href="mailto:sabrinabm94@gmail.com" class="btn btn--primary">E-mail</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" class="whatsapp-float"
+    aria-label="Abrir WhatsApp" rel="noopener">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; 2025 Especialistas em Sites |
+      <a href="mailto:sabrinabm94@gmail.com">Atendimento por E-mail</a> |
+      <a href="https://wa.me/5547999571726?text=Ol%C3%A1%2C%20vim%20pelo%20site">Atendimento por WhatsApp</a>
+    </p>
+  </footer>
+
+  <!-- JS -->
+  <script defer src="assets/js/theme-toggle.js"></script>
+</body>
+
 </html>

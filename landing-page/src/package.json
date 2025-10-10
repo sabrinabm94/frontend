@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf public",
     "mkdir": "mkdirp public/assets",
-    "copy": "cpy \"index.html\" \"public/\" && cpy \"assets/**/*\" \"public/assets\" && cpy \"blog/**/*\" \"public/blog\"",
+    "copy": "cpy \"index.html\" \"google28d805f628e3da2f.html\" \"public/\" && cpy \"assets/**/*\" \"public/assets\" && cpy \"blog/**/*\" \"public/blog\"",
     "start": "npx serve public",
     "build": "npm-run-all clean mkdir copy",
     "firebase": "firebase deploy",
